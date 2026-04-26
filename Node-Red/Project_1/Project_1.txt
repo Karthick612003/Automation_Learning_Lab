@@ -1,0 +1,27 @@
+Project 1: Hello World in Node-RED
+Date: 22-04-2026
+Project Type: Basic Flow Configuration
+
+Description:
+Today I completed the setup of my Node-RED development environment and successfully built my first flow to understand the data pipeline.
+
+Flow Details:
+
+Input (Inject Node): Configured as a "String" type with the payload "HELLO WORLD!".
+
+Processing: None (Direct pass-through).
+
+Output (Debug Node): Connected to the output of the Inject node to verify the signal.
+
+How it works:
+
+I placed the Inject node on the workspace and set the payload string.
+
+I connected the Inject node to the Debug node.
+
+Upon clicking "Deploy," the flow became active.
+
+Manually triggering the Inject node successfully printed "HELLO WORLD!" in the Debug sidebar.
+
+Key Learning:
+This project taught me the fundamental cycle of Node-RED: Triggering an event and Visualizing the result using the debug console. This pattern will serve as the foundation for all my future industrial monitoring projects.

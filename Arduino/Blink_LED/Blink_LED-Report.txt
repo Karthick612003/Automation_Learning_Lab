@@ -1,0 +1,27 @@
+Project 1: LED Blink (The Hardware "Hello World")
+Date: 2026-04-26
+Project Type: Hardware Initialization & Firmware Flash
+
+Description:
+Today I established the baseline for my ESP32 development environment by successfully configuring the toolchain and deploying a basic firmware blink sequence. This project confirms that the IDE, drivers, and physical board connection are synchronized for future industrial tasks.
+
+Technical Configuration:
+
+Hardware: ESP32-WROOM-32 DevKit V1.
+
+IDE Environment: Arduino IDE 2.3.x with esp32:esp32 core 3.3.8.
+
+Logic: A periodic GPIO toggle cycle (1000ms ON / 1000ms OFF).
+
+Process Details:
+
+Driver Verification: Confirmed stable communication with the Silicon Labs CP210x USB-to-UART bridge.
+
+Environment Setup: Resolved local disk space constraints by managing library/package installation paths.
+
+Deployment: Compiled the firmware and successfully flashed the binary to the ESP32 partition via esptool.
+
+Verification: Manually triggered the bootloader via the board's BOOT pin during the connection handshake to initiate the data transfer.
+
+Key Learning:
+This project reinforced the cycle of Compile -> Upload -> Reset. I learned that industrial hardware often requires manual "Boot Mode" intervention if the auto-reset circuit is absent or unstable. Mastering this handshake pattern is critical for deploying code in the field, where physical access to the board might be limited.

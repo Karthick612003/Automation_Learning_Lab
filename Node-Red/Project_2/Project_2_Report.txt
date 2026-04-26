@@ -1,0 +1,25 @@
+Project 2: Data Processing & Transformation
+Date: 2026-04-25
+Project Type: Data Manipulation (Function Node)
+
+Description:
+Today I advanced my learning by adding a "Processing" layer to my Node-RED flows. Instead of just passing data through, I learned how to manipulate it before it reaches the output.
+
+Flow Details:
+
+Input (Inject Node): Configured with the string "hello world!".
+
+Processing (Function Node): Used a small snippet of JavaScript code (msg.payload = msg.payload.toUpperCase();) to convert the text to uppercase.
+
+Output (Debug Node): Connected to display the final processed result.
+
+How it works:
+
+I placed a Function node between the Inject and Debug nodes.
+
+Inside the Function node, I wrote code to transform the payload.
+
+Upon triggering the flow, the input "hello world!" was successfully converted to "HELLO WORLD!" in the debug console.
+
+Key Learning:
+I learned that the Function node is the "brain" of a Node-RED flow. This is a critical skill for my career, as I will need to use this to scale, filter, or convert raw data coming from factory sensors and PLC registers into human-readable information.

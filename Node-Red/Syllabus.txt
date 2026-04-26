@@ -1,0 +1,58 @@
+Syllabus Project List
+
+Phase 1: Foundations & Environment
+
+Module 1 (Setup): Create your first "Hello World" flow and export it as a JSON file to your GitHub repository.
+
+Module 2 (msg Object): Build a flow that adds a custom property to a message (e.g., msg.topic = "sensor_01") and inspects it in the debug window.
+
+Module 3 (Manipulation): Create a "Temperature Converter" that takes a value in Celsius and converts it to Fahrenheit using a Function node.
+
+Module 4 (Storage): Create an "Event Logger" that writes every trigger timestamp into a local system_logs.txt file.
+
+Module 5 (GitHub Sync): Create a documentation folder that includes your flow JSON and a README.md explaining how to run your flow.
+
+Phase 2: IoT Connectivity
+Module 6 (MQTT): Install Mosquitto and create a "Chat Flow" where one Inject node publishes a message and an MQTT-in node receives it back.
+
+Module 7 (ESP32 Basics): Build an "ESP32 Heartbeat" project: the ESP32 publishes "Alive" to Node-RED every 10 seconds.
+
+Module 8 (MQTT Advanced): Create a "Dead-man's Switch" that triggers an alert if the ESP32 stops sending its heartbeat (using Last Will and Testament).
+
+Module 9 (Remote Control): Build a "Web Switch" on your PC that turns an LED on your ESP32 board ON/OFF.
+
+Phase 3: Industrial HMI & Visualization
+Module 10 (Dashboard): Build a "Live Gauge" that visualizes random numbers (simulating machine speed).
+
+Module 11 (UI Design): Create a "Factory Dashboard" with two tabs: one for "Machine Status" and one for "Maintenance Logs."
+
+Module 12 (APIs): Create a "Weather Monitor" that pulls local weather data from a free API and displays the humidity on your dashboard.
+
+Module 13 (Alerts): Build a "Security Monitor" that sends you an email or Telegram message when a "Limit Switch" (button) is pressed.
+
+Phase 4: Industrial Integration (IIoT)
+Module 14 (Modbus): Create a "Modbus Simulator" using an ESP32 as a slave and read its registers in Node-RED.
+
+Module 15 (PLC Connect): Build a "PLC Monitor" that reads a real-time status bit from your Omron/Siemens PLC (or simulated PLC).
+
+Module 16 (Protocols): Create a flow that translates Modbus data into an MQTT message (an "Industrial Gateway" project).
+
+Module 17 (Logic Control): Build an "Irrigation Timer": If the "Soil Moisture" sensor is low, start the pump for exactly 5 minutes.
+
+Phase 5: Data Historian & Analytics
+Module 18 (SQL): Create a "Database Recorder" that saves every machine cycle count into a local SQLite database.
+
+Module 19 (InfluxDB): Build a "Trend Logger" that pushes 24 hours of machine temperature data into InfluxDB.
+
+Module 20 (Grafana): Build a "Professional Dashboard" in Grafana showing the performance of your machine over the last week.
+
+Module 21 (Reports): Create a "Daily Shift Report" flow that automatically generates a CSV file at 6:00 PM and emails it to you.
+
+Phase 6: Professional Deployment
+Module 22 (Docker): Convert your local Node-RED installation into a Docker Container.
+
+Module 23 (Edge Gateway): Install Node-RED on a Raspberry Pi or an old laptop, treating it as your "Factory Gateway."
+
+Module 24 (Master Project): Combine everything: The GIGM machine monitor, the Farm irrigation system, and the database/alerts, all in one "Master Dashboard."
+
+Module 25 (Security): Set up a secure login for your dashboard and configure an SSL certificate (using a guide like DuckDNS) so you can access your machines securely from anywhere.
