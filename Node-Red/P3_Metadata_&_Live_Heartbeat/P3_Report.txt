@@ -1,0 +1,34 @@
+Project 3: Metadata & Live Heartbeat
+Date: 2026-04-29
+
+Project Type: Data Structuring & Automation (Inject Node Properties)
+
+Description:
+
+Today I transitioned from sending simple data to building a "Smart Signal." I learned how to attach metadata to a payload and automate the trigger to simulate a live machine heartbeat.
+
+Flow Details:
+
+Input (Inject Node): Configured as a multi-property trigger.
+
+Payload: Set to timestamp (milliseconds since epoch).
+
+Topic: Set to factory1/machine01.
+
+Location: Set to India.
+
+Automation: Enabled a Repeat Interval of every 5 seconds with a 5-second startup delay.
+
+Output (Debug Node): Set to "complete msg object" to visualize the entire JSON structure.
+
+How it works:
+
+I added extra properties directly inside the Inject node using the +add button, which keeps the flow clean by removing the need for a separate Change node.
+
+I enabled the Interval setting to make the flow run automatically without manual clicks.
+
+By setting the Debug node to show the complete object, I can now see the payload, topic, and location all bundled together in one message.
+
+Key Learning:
+
+I learned how to create a structured data packet. In industrial automation, a raw value is useless without context. By adding a topic and location, I have created a system that identifies which machine is sending data and where it is located. The 5-second interval simulates a real-world "Keep-Alive" signal used to monitor machine uptime in a factory environment.
