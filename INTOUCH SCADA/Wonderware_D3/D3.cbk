@@ -1,0 +1,8 @@
+:IngredientName,IngredientType,Unit,Recipe,Recipe,Recipe
+:Names,,"A","JUICE_1","JUICE_2","JUICE_3"
+"BADAM",Analog,"T1","30","0","0"
+"MILK",Analog,"T2","20","30","30"
+"WATER",Analog,"T3","20","30","30"
+"STRAWBERRY",Analog,"T4","0","20","0"
+"ROSE MILK",Analog,"T5","0","0","20"
+"SUGAR",Analog,"T6","30","20","20"

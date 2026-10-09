@@ -1,0 +1,5 @@
+# Ignore all backup RSS files (e.g., projname_bak000.rss, project_bak001.rss)
+*_bak*.rss
+*_BAK*.RSS
+*.bak
+
